@@ -1,12 +1,17 @@
+# this is a in-built module in python
 import os
 
-
+#initialiing the class for the  login, current_balane, root_password and name
 class User_Credentials():
     login_ = False
     current_balance = 0
     root_password = "_"
     name = "JonDoe"
     
+    '''
+    this is a function named new_account
+    used to make a new account
+    '''
     def new_account():
         os.system('cls')
         User_Credentials.name            = input("User Name : ")
@@ -73,7 +78,9 @@ def login():
         OnLine()
 
 def main():
-
+   '''
+   when the program starts the first thing we see is this print statment
+   '''
     os.system('cls')
 
     if(User_Credentials.login_):
